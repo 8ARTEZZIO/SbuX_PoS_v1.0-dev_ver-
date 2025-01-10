@@ -1,5 +1,5 @@
 # RESTAURANT'S CHEF BEST FRIEND
-#### Video Demo : https://www.youtube.com/watch?v=rt3u0APaAYU](https://youtu.be/T-7JGLcX75I
+#### Video Demo : https://youtu.be/T-7JGLcX75I
 #### Description:
 Have you ever thought about becoming a professional chef?
 Well... maybe I can't help with that, but I can make you nearly as good as the real thing!
