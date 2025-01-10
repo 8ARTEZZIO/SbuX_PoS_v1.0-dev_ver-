@@ -1,0 +1,650 @@
+{
+    "Strawberries": {
+        "emoji": "\ud83c\udf53",
+        "color": "\u001b[31m",
+        "balsamic vinegar": {
+            "note": "tangy, slightly sweet",
+            "emoji": "\ud83e\uddc9",
+            "color": "\u001b[35m"
+        },
+        "mint": {
+            "note": "cool, refreshing",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "basil": {
+            "note": "herbal, slightly peppery",
+            "emoji": "\ud83c\udf31",
+            "color": "\u001b[32m"
+        },
+        "cream": {
+            "note": "rich, smooth",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[37m"
+        },
+        "white chocolate": {
+            "note": "sweet, creamy",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[33m"
+        }
+    },
+    "Apples": {
+        "emoji": "\ud83c\udf4e",
+        "color": "\u001b[91m",
+        "cheddar cheese": {
+            "note": "sharp, tangy",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[33m"
+        },
+        "cinnamon": {
+            "note": "warm, spicy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "caramel": {
+            "note": "sweet, buttery",
+            "emoji": "\ud83c\udf6c",
+            "color": "\u001b[33m"
+        },
+        "fennel": {
+            "note": "licorice-like, aromatic",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "sage": {
+            "note": "earthy, slightly peppery",
+            "emoji": "\ud83c\udf43",
+            "color": "\u001b[32m"
+        }
+    },
+    "Bananas": {
+        "emoji": "\ud83c\udf4c",
+        "color": "\u001b[33m",
+        "peanut butter": {
+            "note": "rich, nutty, creamy",
+            "emoji": "\ud83e\udd5c",
+            "color": "\u001b[93m"
+        },
+        "chocolate": {
+            "note": "sweet, rich, bitter",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[33m"
+        },
+        "coconut": {
+            "note": "creamy, tropical",
+            "emoji": "\ud83e\udd65",
+            "color": "\u001b[37m"
+        },
+        "yogurt": {
+            "note": "tangy, smooth",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[97m"
+        },
+        "honey": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf6f",
+            "color": "\u001b[93m"
+        }
+    },
+    "Blueberries": {
+        "emoji": "\ud83e\uded0",
+        "color": "\u001b[34m",
+        "lemon zest": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[33m"
+        },
+        "almonds": {
+            "note": "nutty, earthy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "maple syrup": {
+            "note": "sweet, woody",
+            "emoji": "\ud83c\udf41",
+            "color": "\u001b[93m"
+        },
+        "vanilla": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf66",
+            "color": "\u001b[37m"
+        },
+        "oats": {
+            "note": "earthy, toasty",
+            "emoji": "\ud83e\udd63",
+            "color": "\u001b[90m"
+        }
+    },
+    "Oranges": {
+        "emoji": "\ud83c\udf4a",
+        "color": "\u001b[93m",
+        "ginger": {
+            "note": "spicy, warm",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[35m"
+        },
+        "dark chocolate": {
+            "note": "bitter, rich",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[33m"
+        },
+        "cloves": {
+            "note": "warm, aromatic",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[35m"
+        },
+        "cinnamon": {
+            "note": "sweet, spicy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "mint": {
+            "note": "cool, refreshing",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        }
+    },
+    "Eggplants": {
+        "emoji": "\ud83c\udf46",
+        "color": "\u001b[35m",
+        "garlic": {
+            "note": "pungent, savory",
+            "emoji": "\ud83e\uddc4",
+            "color": "\u001b[97m"
+        },
+        "tomatoes": {
+            "note": "sweet, tangy",
+            "emoji": "\ud83c\udf45",
+            "color": "\u001b[31m"
+        },
+        "olive oil": {
+            "note": "rich, fruity",
+            "emoji": "\ud83e\uded2",
+            "color": "\u001b[33m"
+        },
+        "parmesan": {
+            "note": "salty, nutty",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[93m"
+        },
+        "basil": {
+            "note": "herbal, slightly peppery",
+            "emoji": "\ud83c\udf31",
+            "color": "\u001b[32m"
+        }
+    },
+    "Shrimp": {
+        "emoji": "\ud83c\udf64",
+        "color": "\u001b[96m",
+        "garlic": {
+            "note": "pungent, savory",
+            "emoji": "\ud83e\uddc4",
+            "color": "\u001b[97m"
+        },
+        "lemon": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[33m"
+        },
+        "chili flakes": {
+            "note": "spicy, sharp",
+            "emoji": "\ud83c\udf36\ufe0f",
+            "color": "\u001b[31m"
+        },
+        "butter": {
+            "note": "rich, creamy",
+            "emoji": "\ud83e\uddc8",
+            "color": "\u001b[93m"
+        },
+        "parsley": {
+            "note": "herbal, fresh",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        }
+    },
+    "Spinach": {
+        "emoji": "\ud83e\udd6c",
+        "color": "\u001b[32m",
+        "feta cheese": {
+            "note": "salty, tangy",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[93m"
+        },
+        "walnuts": {
+            "note": "nutty, earthy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "cranberries": {
+            "note": "tart, sweet",
+            "emoji": "\ud83c\udf52",
+            "color": "\u001b[31m"
+        },
+        "olive oil": {
+            "note": "rich, fruity",
+            "emoji": "\ud83e\uded2",
+            "color": "\u001b[33m"
+        },
+        "lemon juice": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[33m"
+        }
+    },
+    "Coffee": {
+        "emoji": "\u2615",
+        "color": "\u001b[90m",
+        "chocolate": {
+            "note": "sweet, bitter, rich",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[33m"
+        },
+        "cinnamon": {
+            "note": "warm, spicy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "cardamom": {
+            "note": "warm, citrusy, spicy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[96m"
+        },
+        "orange zest": {
+            "note": "citrusy, aromatic",
+            "emoji": "\ud83c\udf4a",
+            "color": "\u001b[33m"
+        },
+        "hazelnut": {
+            "note": "nutty, sweet",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        }
+    },
+    "Chocolate": {
+        "emoji": "\ud83c\udf6b",
+        "color": "\u001b[90m",
+        "hazelnuts": {
+            "note": "nutty, sweet",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "strawberries": {
+            "note": "sweet, juicy",
+            "emoji": "\ud83c\udf53",
+            "color": "\u001b[31m"
+        },
+        "sea salt": {
+            "note": "salty, sharp",
+            "emoji": "\ud83e\uddc2",
+            "color": "\u001b[97m"
+        },
+        "orange zest": {
+            "note": "citrusy, aromatic",
+            "emoji": "\ud83c\udf4a",
+            "color": "\u001b[33m"
+        },
+        "whipped cream": {
+            "note": "light, creamy",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[97m"
+        }
+    },
+    "Pears": {
+        "emoji": "\ud83c\udf50",
+        "color": "\u001b[92m",
+        "blue cheese": {
+            "note": "salty, tangy",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[93m"
+        },
+        "walnuts": {
+            "note": "nutty, earthy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "honey": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf6f",
+            "color": "\u001b[33m"
+        },
+        "arugula": {
+            "note": "peppery, slightly bitter",
+            "emoji": "\ud83c\udf43",
+            "color": "\u001b[32m"
+        },
+        "balsamic glaze": {
+            "note": "sweet, tangy",
+            "emoji": "\ud83e\uddc9",
+            "color": "\u001b[35m"
+        }
+    },
+    "Coconut": {
+        "emoji": "\ud83e\udd65",
+        "color": "\u001b[97m",
+        "pineapple": {
+            "note": "tangy, sweet",
+            "emoji": "\ud83c\udf4d",
+            "color": "\u001b[33m"
+        },
+        "lime": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[32m"
+        },
+        "mango": {
+            "note": "juicy, tropical",
+            "emoji": "\ud83e\udd6d",
+            "color": "\u001b[93m"
+        },
+        "rum": {
+            "note": "sweet, woody",
+            "emoji": "\ud83e\udd43",
+            "color": "\u001b[33m"
+        },
+        "mint": {
+            "note": "cool, refreshing",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        }
+    },
+    "Broccoli": {
+        "emoji": "\ud83e\udd66",
+        "color": "\u001b[32m",
+        "cheddar cheese": {
+            "note": "sharp, tangy",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[33m"
+        },
+        "garlic": {
+            "note": "pungent, savory",
+            "emoji": "\ud83e\uddc4",
+            "color": "\u001b[97m"
+        },
+        "lemon": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[33m"
+        },
+        "olive oil": {
+            "note": "rich, fruity",
+            "emoji": "\ud83e\uded2",
+            "color": "\u001b[33m"
+        },
+        "almonds": {
+            "note": "nutty, crunchy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        }
+    },
+    "Cherries": {
+        "emoji": "\ud83c\udf52",
+        "color": "\u001b[31m",
+        "dark chocolate": {
+            "note": "bitter, rich",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[90m"
+        },
+        "vanilla": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf66",
+            "color": "\u001b[97m"
+        },
+        "almonds": {
+            "note": "nutty, earthy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "cream": {
+            "note": "rich, smooth",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[37m"
+        },
+        "whiskey": {
+            "note": "smoky, woody",
+            "emoji": "\ud83e\udd43",
+            "color": "\u001b[33m"
+        }
+    },
+    "Raspberries": {
+        "emoji": "\ud83e\uded0",
+        "color": "\u001b[35m",
+        "white chocolate": {
+            "note": "sweet, creamy",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[33m"
+        },
+        "honey": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf6f",
+            "color": "\u001b[33m"
+        },
+        "mint": {
+            "note": "cool, refreshing",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "basil": {
+            "note": "herbal, slightly peppery",
+            "emoji": "\ud83c\udf31",
+            "color": "\u001b[32m"
+        },
+        "prosecco": {
+            "note": "light, sparkling",
+            "emoji": "\ud83e\udd42",
+            "color": "\u001b[97m"
+        }
+    },
+    "Pomegranates": {
+        "emoji": "\ud83c\udf48",
+        "color": "\u001b[35m",
+        "mint": {
+            "note": "cool, refreshing",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "yogurt": {
+            "note": "tangy, creamy",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[37m"
+        },
+        "honey": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf6f",
+            "color": "\u001b[33m"
+        },
+        "feta cheese": {
+            "note": "salty, tangy",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[93m"
+        },
+        "walnuts": {
+            "note": "nutty, earthy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        }
+    },
+    "Kiwi": {
+        "emoji": "\ud83e\udd5d",
+        "color": "\u001b[92m",
+        "lime": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[33m"
+        },
+        "strawberries": {
+            "note": "sweet, juicy",
+            "emoji": "\ud83c\udf53",
+            "color": "\u001b[31m"
+        },
+        "coconut": {
+            "note": "creamy, tropical",
+            "emoji": "\ud83e\udd65",
+            "color": "\u001b[37m"
+        },
+        "yogurt": {
+            "note": "smooth, tangy",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[97m"
+        },
+        "honey": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf6f",
+            "color": "\u001b[33m"
+        }
+    },
+    "Almonds": {
+        "emoji": "\ud83c\udf30",
+        "color": "\u001b[95m",
+        "dark chocolate": {
+            "note": "bitter, rich",
+            "emoji": "\ud83c\udf6b",
+            "color": "\u001b[90m"
+        },
+        "honey": {
+            "note": "sweet, floral",
+            "emoji": "\ud83c\udf6f",
+            "color": "\u001b[33m"
+        },
+        "cranberries": {
+            "note": "tart, sweet",
+            "emoji": "\ud83c\udf52",
+            "color": "\u001b[31m"
+        },
+        "cinnamon": {
+            "note": "warm, spicy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "oats": {
+            "note": "earthy, toasty",
+            "emoji": "\ud83e\udd63",
+            "color": "\u001b[90m"
+        }
+    },
+    "Cucumber": {
+        "emoji": "\ud83e\udd52",
+        "color": "\u001b[92m",
+        "dill": {
+            "note": "fresh, grassy",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "yogurt": {
+            "note": "creamy, tangy",
+            "emoji": "\ud83e\udd5b",
+            "color": "\u001b[97m"
+        },
+        "lemon": {
+            "note": "citrusy, tangy",
+            "emoji": "\ud83c\udf4b",
+            "color": "\u001b[33m"
+        },
+        "mint": {
+            "note": "cool, refreshing",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "olive oil": {
+            "note": "rich, fruity",
+            "emoji": "\ud83e\uded2",
+            "color": "\u001b[33m"
+        }
+    },
+    "Sweet Potatoes": {
+        "emoji": "\ud83c\udf60",
+        "color": "\u001b[93m",
+        "maple syrup": {
+            "note": "sweet, earthy",
+            "emoji": "\ud83c\udf41",
+            "color": "\u001b[33m"
+        },
+        "cinnamon": {
+            "note": "warm, spicy",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "pecans": {
+            "note": "nutty, toasty",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[95m"
+        },
+        "butter": {
+            "note": "rich, creamy",
+            "emoji": "\ud83e\uddc8",
+            "color": "\u001b[93m"
+        },
+        "marshmallows": {
+            "note": "sweet, fluffy",
+            "emoji": "\ud83c\udf6c",
+            "color": "\u001b[37m"
+        }
+    },
+    "Salmon": {
+        "emoji": "\ud83c\udf63",
+        "color": "\u001b[95m",
+        "capers": {
+            "note": "briny, tangy",
+            "emoji": "\ud83e\udd52",
+            "color": "\u001b[32m"
+        }
+    },
+    "Avocado": {
+        "emoji": "\ud83e\udd51",
+        "color": "\u001b[92m",
+        "cilantro": {
+            "note": "fresh, herbal",
+            "emoji": "\ud83c\udf3f",
+            "color": "\u001b[32m"
+        },
+        "onions": {
+            "note": "sharp, pungent",
+            "emoji": "\ud83c\udf45",
+            "color": "\u001b[97m"
+        }
+    },
+    "Tofu": {
+        "emoji": "\ud83c\udf7d\ufe0f",
+        "color": "\u001b[37m",
+        "scallions": {
+            "note": "fresh, sharp",
+            "emoji": "\ud83c\udf30",
+            "color": "\u001b[32m"
+        }
+    },
+    "Mango": {
+        "emoji": "\ud83e\udd6d",
+        "color": "\u001b[93m",
+        "chili powder": {
+            "note": "spicy, smoky",
+            "emoji": "\ud83c\udf36",
+            "color": "\u001b[31m"
+        }
+    },
+    "Beets": {
+        "emoji": "\ud83e\uddc9",
+        "color": "\u001b[31m",
+        "goat cheese": {
+            "note": "creamy, tangy",
+            "emoji": "\ud83e\uddc0",
+            "color": "\u001b[93m"
+        }
+    },
+    "Chickpeas": {
+        "emoji": "\ud83e\udd54",
+        "color": "\u001b[33m",
+        "paprika": {
+            "note": "smoky, spicy",
+            "emoji": "\ud83c\udf36",
+            "color": "\u001b[31m"
+        }
+    },
+    "Pineapple": {
+        "emoji": "\ud83c\udf4d",
+        "color": "\u001b[93m",
+        "ham": {
+            "note": "salty, savory",
+            "emoji": "\ud83e\uddcf",
+            "color": "\u001b[37m"
+        }
+    }
+}
