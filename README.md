@@ -1,69 +1,89 @@
-# RESTAURANT'S CHEF BEST FRIEND
-#### Video Demo : https://youtu.be/T-7JGLcX75I
-#### Description:
-Have you ever thought about becoming a professional chef?
-Well... maybe I can't help with that, but I can make you nearly as good as the real thing!
+# STARBUCKS POS
 
-- **Run the program in a terminal.**
-- Find some **interesting ingredients** and mix them with 1-2 of the proposed matches.
-- Your outcome dish will most likely fall into the **predicted area of taste notes**.
+## Video Demo
+[Watch the Demo on YouTube](https://www.youtube.com/watch?v=vpb18Lalnvc)
 
-This tool has been **tested in real life**, and it really works!
-Unleash your inner chef and create something amazing today.
+## Description
+Ever wondered about becoming a professional barista? While this tool might not make you one overnight, it will get you closer to crafting incredible drink combinations! 
 
-- **Choose any ingredients** you can see.
-- **Mix and match** them to create intresting combination.
-- Gain insights into the **likely taste notes**.
+The program allows users to explore and combine ingredients to create drinks. Tested and proven in real life, this tool is perfect for unleashing your inner barista.
 
-TO-DO List for New Developers:
+## Features
+- **Ingredient Matching**: Input ingredients and find perfect matches.
+- **Taste Notes**: Gain insights into the predicted flavor profiles.
+- **Interactive User Interface**: Use the terminal to navigate and select options effortlessly.
+- **Dynamic Suggestions**: Handles misspellings and offers close matches.
 
-1. **Understand the Project**
-- Read the Code:
-    Have a look on entire logic and structure.
-- Understand the Use Case: The project helps users find the best ingredient combinations and predict taste notes.
-- Dependencies: Libraries Used:
-    - rapidfuzz
-    - tabulate
-    - wcwidth
+## Quick Start
 
-2. **Setup the Environment**
-- Install Dependencies: Use the following comand:
+### 1. Setup the Environment
+Install the required dependencies:
 ```bash
-    pip install rapidfuzz tabulate wcwidth
-    # or
-    pip install -r requirements.txt
+pip install rapidfuzz tabulate wcwidth
 ```
-- Prepare <mark>data.json</mark>: If the file doesn't exist, the program generates it automatically using the example data.
+Alternatively, install from `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
 
-3. Run the Program
-- Run the Script: Open a terminal and execute the script:
+### 2. Prepare Data
+The tool uses a JSON file (`starbucks_data.json`) as its data source. If the file doesn't exist, the program generates it automatically with example data.
+
+### 3. Run the Program
+Launch the script using Python:
 ```bash
 python project.py
 ```
-- Test the Features:
-    - Use the provided ingredient names (e.g., **Strawberries**, **Apples**, etc.).
-    - Experiment with different inputs to see how the program suggests matches and taste notes.
 
-4. Understand the Key Functions
-- <mark>main()</mark> : The main program loop. It handles the user input and (by using the functions below) displays the output.
-- <mark>load_data()</mark> : Loads ingredients from JSON file or creates one if missing.
-- <mark>ai_input()</mark> : Takes the available data of ingredients and users input. Finds the closest match to the provided string. Asks the user if it's the correct match. If it is - returns True and a list of corrected words.
-- <mark>user_input_to_data()</mark> : Processes user input and formats the output with suggested combinations and taste notes.
+### 4. Explore Features
+- Input ingredient categories and names (e.g., **Espresso Roast**, **Vanilla Syrup**).
+- Receive suggestions and taste profiles based on the combinations you choose.
 
-5. Customize the Data
-- Edit the <mark>ingredients_data</mark> :
-    - Add new ingredients or taste pairings to make the tool more robust.
-    - Save the Data:
-        - Ensure updates to <mark>ingredients_data</mark> are saved in the <mark>data.json</mark> file.
+## Key Functions
 
-6. Debugging and Testing
-- Test Edge Cases:
-    - Test with mispelled ingredient names to ensure <mark>ai_input()</mark> works correctly.
-- Debug Errors:
-    - Handle potential errors like invalid ingredient names or missing data files.
+### `main()`
+- The central loop that handles user input and navigates through the program options.
 
-7. Collaborate and Maintain
-- Version Control:
-    - Use Git for version control. Commit changes regularly.
-- Testing and Feedback:
-    - Test code regularly and share a feedback with me if you'll have any questions.
+### `load_data()`
+- Reads ingredients from `starbucks_data.json`. If the file is missing, it creates one with default data.
+
+### `ai_input()`
+- Takes user input and provides closest matches for ingredients.
+- Ensures valid input through intelligent suggestions.
+
+### `start()`
+- Displays available ingredients and allows users to select and explore combinations.
+
+### `iterate_data()`
+- Processes user-selected ingredients and outputs detailed flavor profiles, including emojis and color-coded notes.
+
+## Customization
+You can easily modify the ingredient data:
+1. Open `starbucks_data.json`.
+2. Add or edit ingredients, taste notes, and pairings.
+3. Save the file and relaunch the program.
+
+## Testing
+Run tests using `test_project.py` to validate the core functions:
+```bash
+pytest -s test_project.py
+```
+Focus on edge cases, such as misspelled inputs and invalid JSON structures.
+
+## Future Improvements
+- Implement the `rand()` function to suggest random ingredient combinations.
+- Add support for custom taste profiles and additional ingredient categories.
+
+## Contribution
+1. Clone the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a detailed description.
+
+## Dependencies
+- `rapidfuzz`: For fast string matching.
+- `tabulate`: For displaying data in table formats.
+- `wcwidth`: For managing string widths, including emojis.
+
+---
+
+Start your culinary adventure today with **Starbucks POS**!
