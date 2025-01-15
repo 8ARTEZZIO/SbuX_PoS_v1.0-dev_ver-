@@ -86,4 +86,4 @@ Focus on edge cases, such as misspelled inputs and invalid JSON structures.
 
 ---
 
-Start your culinary adventure today with **Starbucks POS**!
+Start your barista adventure today with **Starbucks POS**!
