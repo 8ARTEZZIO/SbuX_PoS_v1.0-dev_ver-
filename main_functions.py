@@ -1,191 +1,106 @@
-from data_utils import load_data, save_data, ai_input, user_input_to_data
-from emoji_library import emojis, display_emojis_tab
-from clr_library import colors, display_clr_tab
-from random import choice, randint
-import json
+"""
+This module contains the main functions of the program.
+"""
 import sys
+from random import choice, randint
+from colorama import Style, init
+from data_utils import load_data, ai_input, display_data
+init()
 
+def start(file_path):
+    """
+    Starts a program and allows to search for items.
+    """
+    data = load_data(file_path)
+    data_keys = list(data.keys())
+    display_data(data_keys)
 
-def start_program(file_path="data.json"):
-    display_items = False
-
-    if input("\nDisplay items? [y/n] ").lower().startswith("y"):
-        display_items = True
-
-    data, data_keys = load_data(display_items, file_path)
-
+    res = []
     while True:
-        user = input("\nMain ingredients: ")
-        # leave 'False' as it is; (it's for test purposes)
-        result = ai_input(data_keys, user, capitalized=True, test_on=False, threshold=60)
 
+        user = input("\nWhat category: ")
+        if user == "":
+            print("Invalid Input. It can not be an empty string.")
+            continue
+        # leave 'False' as it is; (it's for test purposes)
+        result = ai_input(data_keys, user, True, False, 60)
         if not result:
             pass
+        display_data(list(data[result[0]].keys()))
+
+        user_two = input("\nWhat drink: ")
+        if user_two == "":
+            print("Invalid Input. It can not be an empty string.")
+            continue
+        result_two = ai_input(list(data[result[0]].keys()), user_two, True, False, 60)
+        if not result_two:
+            pass
+        res.extend([result[0], result_two[0], list(data[result[0]][result_two[0]].keys())[3:]])
+
         # if theres any result from ai_input then take its 2nd element
         # data is a dictionary of the JSON file
-        else:
-            print(user_input_to_data(result[1], data))
-            if input("\nContinue? [y/n] ").lower().startswith("y"):
-                continue
-            else:
-                print("\nBon appétit!")
-                break
+        if len(res) == 3:
+            print(iterate_data(res, data))
+        if input("\nContinue? [y/n] ").lower().startswith("y"):
+            display_data(data_keys)
+            res = []
+            continue
+        print("\nBon appétit!")
+        break
 
 
-def add_item(file_path="data.json"):
+def iterate_data(user, data):
     """
-    This function adds the new item to the dataset.
+    user - the closest matches of ingredients to user's input
+    data - dictionary of the JSON file (ingredients_data in this specific case)
     """
-    emoji_list = [_ for _ in emojis] # the list of emoji keys
-    color_list = [_ for _ in colors]
-    data, data_keys = load_data(False, file_path)
-    new_ingr = {} # the root of the dictionary
 
+    message = ""
+
+    word = user
+    data_keys = list(data[word[0]][word[1]].keys())[3:]
+    display_data(data_keys)
     while True:
-        ingr_name = input("\nThe main ingredient name: ").title()
-        if ingr_name != "":
-            if ingr_name not in data_keys:
-                new_ingr[ingr_name] = {} # the main ingr name
-                break
-            else:
-                print("Name already in a dataset.")
-        else:
+        user = input("\nChoose additional: ")
+        if user == "":
             print("Invalid Input. It can not be an empty string.")
             continue
+        result = ai_input(data_keys, user, False, False, 60)
 
-    display_emojis_tab()
-
-    while True:
-        ingr_emo = input("The main ingredient emoji: ").lower()
-
-        if ingr_emo != "":
-            result = ai_input(emoji_list, ingr_emo, capitalized=False, test_on=False, threshold=60)
-            if result:
-                correct_emoji = result[1][0] # result = (Bool, ['correct_word'])
-                new_ingr[ingr_name]["emoji"] = emojis[correct_emoji] # the main ingredient's emoji
-                break
-        else:
-            print("Invalid Input. It can not be an empty string.")
-            continue
-
-    display_clr_tab() # displays a colorful table of colors
-
-    while True:
-        ingr_clr = input("The main ingredient color: ").lower()
-
-        if ingr_clr != "":
-            result = ai_input(color_list, ingr_clr, capitalized=False, test_on=False, threshold=60)
-            if result:
-                correct_color = result[1][0]
-                new_ingr[ingr_name]["color"] = colors[correct_color] # the main ingredient's color
-                break
-        else:
-            print("Invalid Input. It can not be an empty string.")
-            continue
-
-
-    while True:
-        sub_ingr_name = input("Sub ingredient name: ").lower()
-
-        if sub_ingr_name != "":
-            new_data = {}
-
-            sub_ingr_note = input("Sub ingredient note: ").lower()
-            new_data["note"] = sub_ingr_note
-            display_emojis_tab()
-            while True:
-                sub_ingr_emoji = input("Sub ingredient emoji: ").lower()
-                if sub_ingr_emoji != "":
-                    result = ai_input(emoji_list, sub_ingr_emoji, capitalized=False, test_on=False, threshold=60)
-                    if result:
-                        correct_emoji = result[1][0] # result = (Bool, ['correct_word'])
-                        new_data["emoji"] = emojis[correct_emoji]
-                        break
-                    else:
-                        continue
-                else:
-                    print("Invalid Input. It can not be an empty string.")
-                    continue
-
-            display_clr_tab() # displays a colorful table of colors
-
-            while True:
-                sub_ingr_color = input("Sub ingredient color: ").lower()
-                if sub_ingr_color != "":
-                    result = ai_input(color_list, sub_ingr_color, capitalized=False, test_on=False, threshold=60)
-                    if result:
-                        correct_color_name = result[1][0]
-                        new_data["color"] = colors[correct_color_name]
-                        break
-                else:
-                    print("Invalid Input. It can not be an empty string.")
-                    continue
-
-            new_ingr[ingr_name][sub_ingr_name] = new_data # the main ingredient's sub ingr
-
-            if input("Would you like to add more sub ingredients? [y/n] ").lower()[0]=="y":
-                continue
-            else:
-                break
-
-        else:
-            print("Invalid Input. It can\'t be an empty string.")
-            continue
-
-    save_data(new_ingr)
-
-
-def remove_item(file_path="data.json"):
-    print("Removing Assistant")
-    while True:
-        var = input("Display items? [y/n] ").lower()[0]
-        if var=="y":
-            display_on = True
-            break
-        elif var=="n":
-            display_on = False
-            break
-        else:
-            print("Invalid Input. Choose y/n. ")
-            continue
-
-    # load the current data
-    data, data_keys = load_data(display_on, file_path)
-
-    while True:
-
-        user_remove_item = input("Choose item to remove: ")
-        while True:
-            try:
-                suggestion = ai_input(data_keys, user_remove_item, capitalized=True, test_on=False, threshold=60)
-                break
-            except IndexError:
-                print("Wrong input. Try again.")
-                continue
-
-        if suggestion:
-            for name in suggestion[1]:
-
-                if name in data:
-                    data.pop(name)
-                    print(f"Removed '{name}' from the JSON file.")
-                else:
-                    print(f"The '{name}' not found in the JSON file.")
-
-            with open(file_path, "w") as data_file:
-                json.dump(data, data_file, indent=4)
+        if result:
             break
 
-        else:
-            print("No match. Try again.")
-            continue
+        continue
+
+    color = data[word[0]][word[1]]["color"]
+    note = data[word[0]][word[1]]["note"]
+    emoji = data[word[0]][word[1]]["emoji"]
+
+    message += f"\n{color}{word[1]}{Style.RESET_ALL} {emoji} | {note}\n"
+
+    # TODO: # iterate over the sub ingredients if they exist in the data
+
+    if word[2]:
+        message += "Additions:\n"
+        for w in result:
+            add_list = []
+            note = data[word[0]][word[1]][w]["note"]
+            emoji = data[word[0]][word[1]][w]["emoji"]
+            color = data[word[0]][word[1]][w]["color"]
+            add_list.append(f"\t{color}{w}{Style.RESET_ALL} {emoji} | {note}\n")
+            message += "".join(add_list)
+    return message
 
 
-def surprise_me(file_path):
+# TODO: work on a function that generates a random combination of items
+def rand(file_path):
+    """
+    Generates a random combination of items.
+    """
     print("Not ready yet")
-    data, data_keys = load_data(False, file_path)
+    data, data_keys = load_data(file_path)
     # find from 2 to 5 random items and rem. duplicates
-    temp_list = list(set([choice(data_keys) for x in range(randint(2,5))]))
+    temp_list = list({choice(data_keys) for x in range(randint(2,5))})
     # print(temp_list)
     for i in range(0, len(temp_list)):
         if i+1 < len(temp_list):
@@ -195,6 +110,9 @@ def surprise_me(file_path):
         # print(list(data[i].keys())[2:])
 
 
-def exit_program():
+def ext_program(file_path):
+    """
+    Exits the program.
+    """
     print("Exiting program...")
     sys.exit()

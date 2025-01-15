@@ -1,153 +1,153 @@
 {
-    "Coffee and Espresso": {
+    "Coffee And Espresso": {
         "Espresso Roast": {
-            "emoji": "☕",
+            "emoji": "\u2615",
             "color": "\u001b[90m",
             "note": "Rich and bold with deep flavors.",
             "chocolate": {
                 "note": "sweet, bitter, rich",
-                "emoji": "🍫",
+                "emoji": "\ud83c\udf6b",
                 "color": "\u001b[33m"
             },
             "vanilla": {
                 "note": "sweet, floral",
-                "emoji": "🌸",
+                "emoji": "\ud83c\udf38",
                 "color": "\u001b[97m"
             },
             "hazelnut": {
                 "note": "nutty, sweet",
-                "emoji": "🌰",
+                "emoji": "\ud83c\udf30",
                 "color": "\u001b[95m"
             }
         },
         "Blonde Espresso Roast": {
-            "emoji": "☕",
+            "emoji": "\u2615",
             "color": "\u001b[93m",
             "note": "Smooth and mellow with a sweeter finish.",
             "honey": {
                 "note": "sweet, floral",
-                "emoji": "🍯",
+                "emoji": "\ud83c\udf6f",
                 "color": "\u001b[33m"
             },
             "milk": {
                 "note": "creamy, smooth",
-                "emoji": "🥛",
+                "emoji": "\ud83e\udd5b",
                 "color": "\u001b[37m"
             },
             "cinnamon": {
                 "note": "warm, spicy",
-                "emoji": "🌰",
+                "emoji": "\ud83c\udf30",
                 "color": "\u001b[95m"
             }
         }
     },
     "Tea": {
         "Chai Tea": {
-            "emoji": "🍵",
+            "emoji": "\ud83c\udf75",
             "color": "\u001b[33m",
             "note": "Warm and spicy with a touch of sweetness.",
             "cinnamon": {
                 "note": "warm, spicy",
-                "emoji": "🌰",
+                "emoji": "\ud83c\udf30",
                 "color": "\u001b[95m"
             },
             "milk": {
                 "note": "creamy, smooth",
-                "emoji": "🥛",
+                "emoji": "\ud83e\udd5b",
                 "color": "\u001b[37m"
             },
             "ginger": {
                 "note": "spicy, warm",
-                "emoji": "🌿",
+                "emoji": "\ud83c\udf3f",
                 "color": "\u001b[32m"
             }
         }
     },
     "Syrups": {
         "Vanilla Syrup": {
-            "emoji": "🌸",
+            "emoji": "\ud83c\udf38",
             "color": "\u001b[97m",
-            "note": "Sweet and floral, perfect for lattes."
+            "note": "sweet, floral"
         },
         "Caramel Syrup": {
-            "emoji": "🍬",
+            "emoji": "\ud83c\udf6c",
             "color": "\u001b[33m",
-            "note": "Sweet and buttery with a rich flavor."
+            "note": "sweet, buttery"
         },
         "White Mocha Syrup": {
-            "emoji": "🍫",
+            "emoji": "\ud83c\udf6b",
             "color": "\u001b[37m",
-            "note": "Sweet and creamy with a hint of cocoa."
+            "note": "sweet, creamy, hint of cocoa"
         },
         "Chai Syrup": {
-            "emoji": "🍵",
+            "emoji": "\ud83c\udf75",
             "color": "\u001b[33m",
-            "note": "Warm and spicy, a classic for chai lattes."
+            "note": "warm, spicy"
         },
         "Pistachio Syrup": {
-            "emoji": "🌰",
+            "emoji": "\ud83c\udf30",
             "color": "\u001b[92m",
-            "note": "Nutty and sweet with a unique creamy flavor."
+            "note": "nutty, creamy"
         }
     },
     "Drinks": {
         "Coffee Frappuccino": {
-            "emoji": "🥤",
+            "emoji": "\ud83e\udd64",
             "color": "\u001b[90m",
             "note": "Blended coffee drink, creamy and refreshing.",
             "whipped cream": {
-                "note": "light, fluffy topping",
-                "emoji": "🍦",
+                "note": "light, fluffy",
+                "emoji": "\ud83c\udf66",
                 "color": "\u001b[37m"
             },
             "mocha drizzle": {
-                "note": "rich, chocolatey topping",
-                "emoji": "🍫",
+                "note": "rich, chocolatey",
+                "emoji": "\ud83c\udf6b",
                 "color": "\u001b[33m"
             },
             "caramel drizzle": {
-                "note": "buttery and sweet topping",
-                "emoji": "🍬",
+                "note": "buttery",
+                "emoji": "\ud83c\udf6c",
                 "color": "\u001b[33m"
             }
         },
         "Chai Tea Latte": {
-            "emoji": "🍵",
+            "emoji": "\ud83c\udf75",
             "color": "\u001b[93m",
             "note": "A creamy blend of chai and steamed milk.",
             "chai syrup": {
-                "note": "warm, spicy base",
-                "emoji": "🍵",
+                "note": "warm, spicy",
+                "emoji": "\ud83c\udf75",
                 "color": "\u001b[33m"
             },
             "milk": {
-                "note": "smooth and creamy",
-                "emoji": "🥛",
+                "note": "smooth, creamy",
+                "emoji": "\ud83e\udd5b",
                 "color": "\u001b[37m"
             },
             "cinnamon": {
-                "note": "warm and aromatic",
-                "emoji": "🌰",
+                "note": "warm, aromatic",
+                "emoji": "\ud83c\udf30",
                 "color": "\u001b[95m"
             }
         },
         "Vanilla Bean Frappuccino": {
-            "emoji": "🍦",
+            "emoji": "\ud83c\udf66",
             "color": "\u001b[97m",
             "note": "A creamy, caffeine-free blend with vanilla.",
             "whipped cream": {
-                "note": "light and fluffy topping",
-                "emoji": "🍦",
+                "note": "light, fluffy",
+                "emoji": "\ud83c\udf66",
                 "color": "\u001b[37m"
             },
             "vanilla syrup": {
-                "note": "sweet and floral",
-                "emoji": "🌸",
+                "note": "sweet, floral",
+                "emoji": "\ud83c\udf38",
                 "color": "\u001b[97m"
             },
             "milk": {
-                "note": "smooth and creamy",
-                "emoji": "🥛",
+                "note": "smooth, creamy",
+                "emoji": "\ud83e\udd5b",
                 "color": "\u001b[37m"
             }
         }

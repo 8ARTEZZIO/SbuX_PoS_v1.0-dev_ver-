@@ -1,35 +1,22 @@
-# from project import ai_input
-# from project import ingredients_data as ingredient_names
+"""
+This file contains the test functions for the functions in the main_functions.py file
+"""
+from data_utils import load_data
+from main_functions import iterate_data
 
-# def test_correct_matches():
-#     # exact match
-#     user_one = "Lamb, Pork, Red Wine"
-#     assert ai_input(ingredient_names, user_one, True) == ["Lamb", "Pork", "Red Wine"]
+data = load_data("starbucks_data.json")
+ingredient_names = list(data.keys())
 
-#     # fuzzy match
-#     user_two = "lam; por. red w"
-#     assert ai_input(ingredient_names, user_two, True) == ["Lamb", "Pork", "Red Wine"]
-
-
-# def test_threshold_handling():
-#     user = "la; po. red w"
-
-#     # high confidence
-#     assert ai_input(ingredient_names, user, True, threshold=50) == ["Lamb", "Pork", "Red Wine"]
-
-#     # low confidence
-#     assert ai_input(ingredient_names, user, True, threshold=75) == (False, [])
+def test_load_data():
+    """
+    Test the load_data function
+    """
+    assert load_data("starbucks_data.json") == data
+    assert load_data("starbucks_data.json") != {}
 
 
-# def test_edge_cases():
-#     # empty inputs
-#     user_one = ""
-#     assert ai_input(ingredient_names, user_one, True) == []
-
-#     # special characters
-#     user_two = "sal ; rice.;"
-#     assert ai_input(ingredient_names, user_two, True) == ["Salmon", "Rice"]
-
-#     # case sensitivity
-#     user_three = "ReD wInE; RiC"
-#     assert ai_input(ingredient_names, user_three, True) == ["Red Wine", "Rice"]
+def iterate_data_test():
+    """
+    Test the iterate_data function
+    """
+    assert iterate_data(["Coffee And Espresso", "Espresso Roast", ["chocolate", "vanilla", "hazelnut"]], data) == "milk, coffee, sugar"

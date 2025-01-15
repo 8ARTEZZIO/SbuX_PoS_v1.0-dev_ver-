@@ -1,5 +1,6 @@
-from tabulate import tabulate # type: ignore
-from wcwidth import wcswidth
+"""
+Library of emojis.
+"""
 
 emojis = {
     "smile": "😊",
@@ -63,24 +64,3 @@ emojis = {
     "recycle": "♻️",
     "warning": "⚠️"
 }
-
-
-def adjust_width(text, width):
-    padding = width - wcswidth(text)
-    return text + " " * max(0, padding)
-
-
-def display_emojis_tab():
-    args_list = [_ for _ in emojis]
-
-    table = []
-    for i in range(0, len(emojis), 5):
-
-        row = []
-        for e in args_list[i:i+5]:
-            text = f"{e} {emojis[e]}"
-            row.append(adjust_width(text, 15))
-
-        table.append(row)
-
-    print(tabulate(table, tablefmt="fancy_grid", stralign="center"))
