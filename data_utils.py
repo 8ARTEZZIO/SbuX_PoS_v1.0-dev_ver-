@@ -3,10 +3,23 @@ This module contains functions that are used to load, save and process data.
 """
 import re
 import json
-from colorama import Fore, Style, init
-from rapidfuzz import fuzz, process # type: ignore
-from tabulate import tabulate # type: ignore
-init()
+from rapidfuzz import fuzz, process  # type: ignore
+from tabulate import tabulate  # type: ignore
+
+try:
+    from colorama import Fore, Style, init
+except ModuleNotFoundError:  # pragma: no cover - fallback when colorama is missing
+    class Fore:  # type: ignore
+        GREEN = ""
+
+    class Style:  # type: ignore
+        RESET_ALL = ""
+
+    def init() -> None:  # type: ignore
+        """Compatibility stub when colorama is unavailable."""
+        return None
+else:
+    init()
 
 
 def load_data(file_path):

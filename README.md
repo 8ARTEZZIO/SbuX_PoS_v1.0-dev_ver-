@@ -19,7 +19,7 @@ The program allows users to explore and combine ingredients to create drinks. Te
 ### 1. Setup the Environment
 Install the required dependencies:
 ```bash
-pip install rapidfuzz tabulate wcwidth
+pip install colorama rapidfuzz tabulate wcwidth
 ```
 Alternatively, install from `requirements.txt`:
 ```bash
@@ -64,9 +64,9 @@ You can easily modify the ingredient data:
 3. Save the file and relaunch the program.
 
 ## Testing
-Run tests using `test_project.py` to validate the core functions:
+Run tests using `pytest` to validate the core functions:
 ```bash
-pytest -s test_project.py
+pytest
 ```
 Focus on edge cases, such as misspelled inputs and invalid JSON structures.
 
@@ -80,6 +80,7 @@ Focus on edge cases, such as misspelled inputs and invalid JSON structures.
 3. Submit a pull request with a detailed description.
 
 ## Dependencies
+- `colorama`: For cross-platform terminal colors.
 - `rapidfuzz`: For fast string matching.
 - `tabulate`: For displaying data in table formats.
 - `wcwidth`: For managing string widths, including emojis.
