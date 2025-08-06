@@ -3,9 +3,18 @@ This module contains the main functions of the program.
 """
 import sys
 from random import choice, randint
-from colorama import Style, init
 from data_utils import load_data, ai_input, display_data
-init()
+
+try:
+    from colorama import Style, init
+except ModuleNotFoundError:  # pragma: no cover - fallback when colorama is missing
+    class Style:  # type: ignore
+        RESET_ALL = ""
+
+    def init() -> None:  # type: ignore
+        return None
+else:
+    init()
 
 def start(file_path):
     """
